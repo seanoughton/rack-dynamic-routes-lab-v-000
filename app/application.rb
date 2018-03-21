@@ -22,24 +22,5 @@ class Application
     end
     resp.finish
   end
-=begin
-    if req.path=="/testing"
-      resp.write "Route not found"
-      resp.status = 404
-    elsif req.path.match(/items/)
-      item_name = req.path.split("/items/").last
-      item = @@items.find do |item|
-        item.name == item_name
-      end
-      if item
-        resp.write item.price
-      else
-        resp.write "Item not found"
-        resp.status = 400
-      end
-    end
-    resp.finish
-  end
-=end
 
 end
