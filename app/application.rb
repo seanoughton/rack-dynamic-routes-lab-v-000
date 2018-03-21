@@ -10,6 +10,7 @@ class Application
       resp.write "Route not found"
       resp.status = 404
     end
+    
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
       item = @@items.find do |item|
