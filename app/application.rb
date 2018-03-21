@@ -17,15 +17,6 @@ class Application
       resp.write item.price
       #resp.status = 200
     end
-=begin
-    if req.path.match =="/items/"
-      item_name = req.path.split("/items/").last
-      item = @@items.find do |item|
-        item.name == item_name
-      end
-      resp.write item.price
-    end
-=end
     resp.finish
   end
 
