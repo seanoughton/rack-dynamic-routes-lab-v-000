@@ -14,10 +14,11 @@ class Application
       item = @@items.find do |item|
         item.name == item_name
       end
-      resp.write item.price
-      #resp.status = 200
-    else
-      resp.status = 400
+      if item
+        resp.write item.price
+      else
+        resp.status = 400
+      end
     end
     resp.finish
   end
