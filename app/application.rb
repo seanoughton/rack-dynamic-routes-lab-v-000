@@ -18,6 +18,7 @@ class Application
       resp.write "Route not found"
     end
     resp.finish
+  end
 =begin
     if req.path=="/testing"
       resp.write "Route not found"
