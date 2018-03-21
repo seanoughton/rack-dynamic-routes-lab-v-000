@@ -15,6 +15,7 @@ class Application
         item.name == item_name
       end
       resp.write item.price
+      resp.status = 200
     end
 =begin
     if req.path.match =="/items/"
