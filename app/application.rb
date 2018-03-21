@@ -16,6 +16,8 @@ class Application
       end
       resp.write item.price
       #resp.status = 200
+    else
+      
     end
     resp.finish
   end
