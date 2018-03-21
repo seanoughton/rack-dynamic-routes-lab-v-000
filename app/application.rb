@@ -6,7 +6,7 @@ class Application
     if req.path =="/items"
       resp.write ""
     else
-      
+      resp.status = 404
     end
   end
 
