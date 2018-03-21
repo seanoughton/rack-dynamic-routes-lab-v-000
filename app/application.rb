@@ -14,7 +14,7 @@ class Application
       item = @@items.find do |item|
         item.name == item_name
       end
-      #resp.write item.price
+      resp.write item.price
     end
 =begin
     if req.path.match =="/items/"
