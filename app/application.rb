@@ -9,6 +9,8 @@ class Application
     if req.path=="/testing"
       resp.write "Route not found"
       resp.status = 404
+    elsif req.path.match =="/items/"
+      #something
     end
 =begin
     if req.path.match =="/items/"
