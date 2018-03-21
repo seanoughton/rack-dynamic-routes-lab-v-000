@@ -10,7 +10,7 @@ class Application
       resp.write "Route not found"
       resp.status = 404
     end
-
+=begin
     if req.path.match =="/items/"
       item_name = req.path.split("/items/").last
       item = @@items.find do |item|
@@ -18,7 +18,7 @@ class Application
       end
       resp.write item.price
     end
-
+=end
     resp.finish
   end
 
